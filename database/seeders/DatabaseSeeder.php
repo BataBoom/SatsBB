@@ -1,6 +1,9 @@
 <?php
 
+namespace Database\Seeders;
+
 use Illuminate\Database\Seeder;
+use Illuminate\Support\Str;
 
 class DatabaseSeeder extends Seeder
 {
@@ -11,10 +14,9 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        // $this->call(UsersTableSeeder::class);
-        $this->call(WalletSeeder::class);
+        $this->call([WalletSeeder::class]);
 
-	App\User::Create([
+	\App\User::Create([
 		'name'  => 'admin',
 		'email' => 'admin@satzbb.com',
 		'email_verified_at' => now(),
