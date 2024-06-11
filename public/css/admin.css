@@ -1,0 +1,91 @@
+th, .payments-card table.th-center th {
+    text-align: center;
+}
+
+td {
+    text-align: center;
+}
+
+table.table-left td, table.table-left th {
+    text-align: left;
+}
+
+.payments-card {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: inline-block;
+    word-break: break-all;
+    margin-left: -4px;
+    min-width: 100%;
+}
+
+.payments-card th {
+    white-space: nowrap;
+    text-align: left;
+}
+
+.pagination {
+    justify-content: center;
+}
+
+.menu-block {
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.extending-button {
+    position: relative;
+}
+
+.extending-button .extending-button-body {
+    display: inline-flex;
+    width: 0px;
+    min-width: 0px;
+    overflow: hidden;
+    float: right;
+    margin-left: 0px;
+    opacity: 0;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -ms-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+}
+
+.btn:hover .extending-button-body {
+    display: inline-flex;
+    width: auto;
+    float: right;
+    margin-left: 15px;
+    text-align: right;
+    opacity: 1;
+
+}
+
+.site-permissions {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.site-permissions .btn-group {
+    float: right;
+}
+
+span[data-feather=home] {
+    margin-right: 10px;
+    width: 24px;
+    text-align: center;
+    left: 10px;
+    position: absolute;
+    line-height: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.nav-pills.left-navigation .nav-item {
+    position: relative;
+}
+
+.nav-pills.left-navigation .nav-link {
+    padding-left: 40px;
+}

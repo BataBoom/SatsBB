@@ -1,0 +1,514 @@
+body, header, footer {
+    font-family: 'Raleway', sans-serif;
+    color: #fff;
+}
+
+h1 {
+    font-size: 70px;
+    font-weight: bold;
+}
+
+h3.btc-price {
+    background-color: #e9565e;
+    font-weight: bold;
+    font-size: 30px;
+    padding: 5px 10px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    display: inline-block;
+    margin-bottom: 40px;
+}
+
+button {
+    cursor: pointer;
+}
+
+#home {
+    background: url(../img/background.png);
+    min-height: calc(100vh - 83px);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+footer {
+    height: 83px;
+    clear: both;
+}
+
+#overlay {
+    background: #262f50;
+    height: 100vh;
+    text-align: center;
+}
+
+.logo-responsive {
+    padding: 15px;
+    padding-left: 65px;
+}
+
+.header_layer {
+    margin-top: 35px;
+}
+
+.footer_layer {
+    background: #ffffff;
+    color: #000000;
+    height: 100%;
+}
+
+.footer_layer a {
+    color: #000000;
+}
+
+.menu {
+    float: right;
+    list-style: none;
+    margin-bottom: 0;
+    padding-top: 13px;
+    padding-right: 83px;
+    font-size: 18px;
+    color: #fff;
+}
+
+.menu li {
+    float: left;
+    padding: 0 20px;
+}
+
+.menu a {
+    color: #fff;
+}
+
+.menu li a:hover {
+    text-decoration: none;
+    border-bottom: 2px solid #eb8155;
+    padding-bottom: 9px;
+}
+
+.all-rights-reserved {
+    font-size: 16px;
+    padding: 26px 0 33px 0px;
+    padding-left: 30%;
+}
+
+.menu-footer {
+    list-style: none;
+    padding: 26px 0 33px 0px;
+    float: right;
+    margin-bottom: 0;
+    padding-right: 27.5%;
+}
+
+.menu-footer li {
+    float: left;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+.menu-footer li:first-child {
+    border-right: 1px solid #bec2cf;
+}
+
+.menu-footer li a:hover {
+    text-decoration: none;
+    border-bottom: 2px solid #eb8155;
+}
+
+.head_time {
+    max-width: 300px;
+    float: right;
+    margin-top: 37px;
+    margin-right: 70px;
+}
+
+.qr_block {
+    padding: 30px 20px 10px 20px;
+    max-width: 340px;
+    float: left;
+    background: #242c4a;
+    border-radius: 10px;
+    background-color: #f8f9fa08;
+    margin-top: 23px;
+    /*margin-left: 8.5%;*/
+    margin-left: 69px;
+    margin-bottom: 15px;
+}
+
+.qr_layer {
+    text-align: center;
+}
+
+.qr_block p {
+    margin-top: 18px;
+    margin-bottom: 20px;
+}
+
+.qr_layer img {
+    max-width: 100%;
+    padding: 6px;
+    background: #fff;
+    border-radius: 5px;
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+    opacity: 1;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 140px;
+    background-color: #252c4b;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    bottom: 150%;
+    left: 50%;
+    margin-left: -75px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
+
+.tooltip_layer input {
+    background: #3f476a;
+    border: none;
+    padding: 16px 15px;
+    border-radius: 5px;
+    width: 162px;
+    outline: none;
+    color: #fff;
+}
+
+.tooltip_layer button {
+    border: none;
+    background: #ea595c;
+    padding: 17px 30px;
+    border-radius: 5px;
+    color: #fff;
+    margin-left: 8px;
+}
+#overlay .container {
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    padding-bottom: 75px;
+}
+.btn {
+    background: #ea595c;
+    padding: 17px 30px;
+    border-radius: 5px;
+    color: #fff;
+}
+
+.payment_button {
+    padding: 17px 30px 10px 30px;
+    text-transform: uppercase;
+    width: 100%;
+    background-color: #ea595c; /* For browsers that do not support gradients */
+    background-image: linear-gradient(to right, #eb8455, #e9545e); /* Standard syntax (must be last) */
+}
+
+.btn-green {
+    border: none;
+    background-color: #1c8657; /* For browsers that do not support gradients */
+    background-image: linear-gradient(to right, #1c8657, #28d587);
+}
+
+.payment_button::after {
+    content: url(../img/open_wallet_after.png);
+    float: right;
+    position: relative;
+    top: -3px;
+}
+
+.payment_button_layer {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#page {
+    height: calc(100vh - 83px);
+    width: 100%;
+    padding-bottom: 75px;
+}
+
+#overlay div div div img {
+    margin-bottom: 20px;
+}
+
+#overlay div div div h2 {
+    margin-bottom: 20px;
+}
+
+
+/* SELECT CURRENCY */
+.currency-selection-block {
+    width: 364px;
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.currency-selection-block h2.h2 {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+ul.curriencies-list {
+    list-style: none;
+    width: 364px;
+    padding: 0;
+    margin: 0;
+    max-height: 50vh;
+    overflow: auto;
+}
+ul.curriencies-list li {
+    width: 100%;
+    height: 50px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+    background-color: #FFF;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 24px;
+    color: #000000;
+    line-height: 50px;
+    font-weight: 600;
+}
+ul.curriencies-list li a {
+    color: #000000;
+    display: block;
+    text-decoration: none;
+}
+
+@media (max-width: 991px) {
+    .qr_block {
+        padding: 23px 5px;
+        max-width: 340px;
+        float: left;
+        background: #242c4a;
+        border-radius: 10px;
+        background-color: #f8f9fa08;
+        margin-top: 0px;
+        margin-left: 0px;
+        margin-bottom: 15px;
+    }
+
+    .head_time {
+        max-width: 300px;
+        float: right;
+        margin-top: 0px;
+        margin-right: 0px;
+    }
+}
+
+@media (max-width: 767px) {
+    .qr_block {
+        float: none;
+        margin: 0 auto;
+        margin-bottom: 15px;
+        background: none;
+    }
+
+    .head_time {
+        float: none;
+        margin: 0 auto;
+    }
+
+    .head_time {
+        max-width: 320px;
+        text-align: center;
+    }
+
+    h1 {
+        font-size: 40px;
+    }
+
+    .TimeCircles {
+        max-width: 190px;
+        margin: 0 auto;
+    }
+
+    .tooltip_layer input {
+        width: calc(100% - 107px);
+    }
+
+
+}
+
+@media (max-width: 637px) {
+    .header_layer {
+        margin-top: 15px;
+        padding-left: 0px;
+    }
+
+    .logo-responsive {
+        padding: 15px;
+        padding-left: 41px;
+    }
+
+    .menu {
+        float: right;
+        list-style: none;
+        margin-bottom: 0;
+        padding-top: 13px;
+        padding-right: 0px;
+        padding-left: 0px;
+        font-size: 18px;
+        color: #fff;
+    }
+
+    .menu li {
+        float: left;
+        padding: 0 17px;
+    }
+
+    .all-rights-reserved {
+        font-size: 16px;
+        padding: 25px 0 26px 0px;
+        padding-left: 21px;
+    }
+
+    .menu-footer {
+        list-style: none;
+        padding: 25px 0 26px 0px;
+        float: right;
+        margin-bottom: 0;
+        padding-right: 6px;
+    }
+
+
+}
+
+@media (max-width: 400px) {
+    .currency-selection-block {
+        position: relative;
+        width: 100%;
+        transform: unset;
+        position: unset;
+    }
+    .currency-selection-block ul.curriencies-list {
+        width: 100%;
+        height: calc(100vh - 250px);
+        overflow: auto;
+    }
+    .header_layer {
+        margin-top: 15px;
+        padding-left: 0px;
+    }
+
+    .logo-responsive {
+        padding: 10px;
+        padding-left: 20px;
+    }
+
+    .menu {
+        padding-top: 10px;
+    }
+
+    .menu li {
+        padding: 0 10px;
+    }
+
+    .menu-footer li {
+        float: left;
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+
+    .all-rights-reserved {
+        padding-left: 0;
+    }
+
+    .mobile_padding {
+        padding: 0px;
+        padding-left: 15px;
+
+    }
+}
+
+@media (max-width: 340px) {
+    .tooltip_layer input {
+        width: calc(100% - 107px);
+    }
+}
+
+
+
+
+/*Coins*/
+.coin-icon {
+    margin-top: 7px;
+    margin-bottom: 7px;
+    line-height: 32px;
+    height: 32px;
+    padding-left: 80px;
+    background-repeat: no-repeat;
+    background-position: left 10px center;
+    -webkit-background-size: 32px;
+    background-size: 32px;
+}
+.coin-icon-24 {
+    height: 24px;
+    width: 24px;
+    padding-left: 30px;
+    line-height: 24px;
+    -webkit-background-size: 16px;
+    background-size: 16px;
+}
+.coin-icon-64 {
+    height: 64px;
+    padding-left: 85px;
+    line-height: 64px;
+    -webkit-background-size: 64px;
+    background-size: 64px;
+}
+.coin-icon-34 {
+    height: 64px;
+    padding-left: 60px;
+    line-height: 64px;
+    -webkit-background-size: 34px;
+    background-size: 34px;
+}
+.coin-icon input {
+    margin-top:0;
+    line-height: 32px;
+    height: 32px;
+    width: 32px;
+}
+.coin-Bitcoin {
+    background-image: url('../img/coins/bitcoin.png');
+}
+.coin-Litecoin {
+    background-image: url('../img/coins/litecoin.png');
+}
+.coin-rounded-Bitcoin {
+    background-image: url('../img/coins/rounded_borders/bitcoin.png');
+}
+.coin-rounded-Litecoin {
+    background-image: url('../img/coins/rounded_borders/litecoin.png');
+}
