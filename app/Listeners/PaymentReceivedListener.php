@@ -27,11 +27,15 @@ class PaymentReceivedListener
      */
     public function handle(PaymentReceived $event)
     {
+        /*
         if ($event->invoice->site_id == 1) {
             (new CallBackServiceV2($event->invoice))->execute();
         } else {
             //
             Log::debug('CallBackService not set');
         }
+        */
+        Log::debug('PaymentReceived Listener Called');
+        (new CallBackServiceV2($event->invoice))->execute();
     }
 }
