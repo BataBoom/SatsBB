@@ -21,6 +21,8 @@ define a Litecoin and Bitcoin RPC Login in .env then run
 /usr/bin/php8.2 artisan config:clear
 ```
 
+All Done! Now create an invoice: https://github.com/BataBoom/SatsBB/wiki/Create-Invoice
+
 Future updates + wiki to come. Donations welcome.
 
 - LTC: ltc1qcjzvjfvs4lrx4r7cet0pvewkqpd0gvgwgzxwvd
