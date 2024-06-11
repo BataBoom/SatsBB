@@ -25,3 +25,6 @@ define a Litecoin and Bitcoin RPC Login in .env then run
 ```
 php artisan config:clear
 ```
+
+
+Future updates + wiki to come
