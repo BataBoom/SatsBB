@@ -1,6 +1,8 @@
 <?php
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\Api\InvoicesController;
 
 /*
 |--------------------------------------------------------------------------
@@ -18,7 +20,7 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 });
 
 Route::group(['middleware' => 'auth', 'namespace' => 'Api'], function () {
-    Route::post('/createInvoice', "InvoicesController@createInvoice");
+    Route::post('/createCashiersInvoice', [InvoicesController::class, 'createInvoice']);
 });
 
 Route::get('invoice/{invoice}', "Api\InvoicesController@invoicePaid");
