@@ -13,7 +13,7 @@ composer install
 - admin@satzbb.com
 - YourAdminPassword (or as defined in seeder)
 
-Add a site in the admin panel
+Add a site in the admin panel, ensure the site has a valid callback URL accepting POST Requests. Data will be forwarded to that URL after a payment is complete. 
 
 define a Litecoin and Bitcoin RPC Login in .env then run 
 
