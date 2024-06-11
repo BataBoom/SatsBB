@@ -27,4 +27,7 @@ php artisan config:clear
 ```
 
 
-Future updates + wiki to come
+Future updates + wiki to come. Donations welcome.
+
+LTC: ltc1qcjzvjfvs4lrx4r7cet0pvewkqpd0gvgwgzxwvd
+BTC: bc1q33vpvccrc85wazke69na369ajw0983jn8eu8wc
