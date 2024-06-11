@@ -4,7 +4,8 @@ namespace App\Listeners;
 
 use App\Events\PaymentReceived;
 use App\Http\Services\CallBackService;
-use App\Http\Services\NBZHook;
+use App\Http\Services\CallBackServiceV2;
+use Illuminate\Support\Facades\Log;
 
 class PaymentReceivedListener
 {
@@ -26,10 +27,11 @@ class PaymentReceivedListener
      */
     public function handle(PaymentReceived $event)
     {
-        if ($event->invoice->site_id != 2) {
-            (new CallBackService($event->invoice))->execute();
+        if ($event->invoice->site_id == 1) {
+            (new CallBackServiceV2($event->invoice))->execute();
         } else {
             //
+            Log::debug('CallBackService not set');
         }
     }
 }
