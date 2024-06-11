@@ -21,7 +21,15 @@ define a Litecoin and Bitcoin RPC Login in .env then run
 /usr/bin/php8.2 artisan config:clear
 ```
 
-All Done! Now create an invoice: https://github.com/BataBoom/SatsBB/wiki/Create-Invoice
+Next create an invoice: https://github.com/BataBoom/SatsBB/wiki/Create-Invoice
+
+Finally set your cron
+
+```
+* * * * * cd /var/www/merchant && php artisan schedule:run >> /dev/null 2>&1
+```
+
+Mark your initial "test" invoices as paid in the admin panel. You should be redirected to admin panel, with invoice marked as paid w/o any errors. If there are errors examine the log and re-check the steps. 
 
 Future updates + wiki to come. Donations welcome.
 
